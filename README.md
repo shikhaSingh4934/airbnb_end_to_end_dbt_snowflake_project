@@ -41,7 +41,13 @@ This approach ensures:
 * No hard-coded credentials
 * Scalable ingestion pattern
 
+
+**Snowflake Staging Schema**
+
+<img width="562" height="361" alt="image" src="https://github.com/user-attachments/assets/d030e7d6-0c8c-44a7-b795-73b25472d1c6" />
+
 ---
+
 
 ## 🥉 Bronze Layer (Raw Incremental Models)
 
@@ -52,6 +58,12 @@ The **Bronze layer** represents raw, lightly processed data loaded incrementally
 * `bronze_bookings.sql`
 * `bronze_listings.sql`
 * `bronze_hosts.sql`
+
+**Snowflake Bronze Schema**
+
+
+<img width="325" height="223" alt="image" src="https://github.com/user-attachments/assets/1ded50cd-8150-423c-bf96-875bf65baee5" />
+
 
 ### Key Characteristics
 
@@ -75,6 +87,11 @@ The **Silver layer** applies business logic, data quality improvements, and upse
 * `silver_bookings.sql`
 * `silver_listings.sql`
 * `silver_hosts.sql`
+
+**Snowflake Silver Schema**
+
+<img width="468" height="182" alt="image" src="https://github.com/user-attachments/assets/f648b685-d89a-4a89-b983-da4187e522e4" />
+
 
 ### Key Features
 
@@ -142,6 +159,11 @@ This layer supports historical analysis and dimensional modeling.
 
    * Built using a **metadata-driven join approach**
    * Joins fact data with dimension tables
+
+**Snowflake Gold Schema**
+
+<img width="387" height="263" alt="image" src="https://github.com/user-attachments/assets/c7c37e8a-9568-4716-8421-f64ff754f9b7" />
+
 
 Purpose:
 
