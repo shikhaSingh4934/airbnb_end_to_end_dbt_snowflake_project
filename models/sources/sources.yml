@@ -1,0 +1,10 @@
+version:
+
+sources:
+  - name: staging # Source system name
+    database: AIRBNB     # Optional: database where source is stored
+    schema: staging  # Schema containing the source tables
+    tables:
+      - name: listings   # Table name as it exists in the database
+      - name: bookings
+      - name: hosts
